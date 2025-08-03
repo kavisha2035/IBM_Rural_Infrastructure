@@ -22,35 +22,25 @@ Efficient classification of large-scale rural infrastructure projects is essenti
 
 ---
 
-##  Project Structure
-IBM_Rural_Infrastrucutre/
-│
-├── data/
-│ └── PMGSY_DATASET.csv #  dataset (non-sensitive)
-│
-├── notebooks/
-│ └── Rural_Infrastructure.ipynb # EDA and data preprocessing steps
-│
-├── app/
-│ └── app1.py # Web frontend for predictions 
-│
-├── assets/
-│ └── images/ # Visuals, charts, screenshots
-│
-├── requirements.txt # Python package dependencies
-├── README.md # Project documentation (this file)
-└── .gitignore # Ignore unnecessary files
-
 Future Scope
 Integrate real-time data pipelines using IBM Cloud Functions
-
 Enhance features using GIS/geolocation data
-
 Deploy model on IBM Cloud with a web-based dashboard
-
 Expand to other government schemes (e.g., BharatNet, RURBAN)
-
 Use Explainable AI (XAI) to improve trust and transparency
 
+
+##  AutoAI Pipeline Summary
+
+IBM AutoAI performed:
+- Automated data cleaning and feature engineering
+- Model selection across multiple algorithms (e.g., XGBoost, LGBM, Logistic Regression)
+- Hyperparameter optimization using Bayesian search
+- Leaderboard generation based on F1-score and accuracy
+
+##  Known Limitations
+
+- AutoAI handles most preprocessing, but domain-specific feature tuning is limited.
+- Some project records with missing or inconsistent values were dropped.
 
 
